@@ -4,163 +4,266 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legal Notice – Nexyro</title>
+  <meta name="description" content="Legal notice, terms of service, and privacy policy for Nexyro." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>N</text></svg>" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+      --card-bg: #fff;
+      --radius: 10px;
+    }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #222;
-      background: #fff;
+      color: var(--text);
+      background: var(--bg);
       line-height: 1.7;
-      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       max-width: 720px;
       margin: 0 auto;
+      padding: 1.25rem 1.5rem;
     }
-    h1 { font-size: 1.8rem; margin-bottom: 1.5rem; }
-    h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.5rem; }
-    h3 { font-size: 1.1rem; margin-top: 1.2rem; margin-bottom: 0.3rem; }
-    p, li { font-size: 0.95rem; margin-bottom: 0.5rem; }
-    ul { padding-left: 1.2rem; margin-bottom: 0.8rem; }
-    a { color: #0055ff; }
-    .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
-    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #666; }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    nav a.nav-link {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a.nav-link:hover { color: var(--text); }
+
+    /* CONTENT */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 3rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.35rem;
+    }
+    p { font-size: 0.9rem; margin-bottom: 0.6rem; }
+    li { font-size: 0.9rem; margin-bottom: 0.35rem; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { font-weight: 600; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0.3rem 1rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .info-grid dt { font-weight: 600; color: var(--muted); }
+    .info-grid dd { color: var(--text); }
+
+    /* FOOTER */
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 1.25rem; }
   </style>
 </head>
 <body>
 
-  <a href="/" class="back">&larr; Back to site</a>
+  <nav>
+    <a href="/" class="logo">Nexyro</a>
+    <a href="/" class="nav-link">&larr; Back to site</a>
+  </nav>
 
-  <h1>Legal Notice</h1>
+  <main>
+    <h1>Legal Notice</h1>
+    <p class="subtitle">Last updated: March 2026</p>
 
-  <!-- ============================================ -->
-  <!-- 1. Legal Information                         -->
-  <!-- ============================================ -->
-  <h2>1. Legal Information</h2>
-  <p><strong>Operator:</strong> Anthony Vincent Louis Papoti, operating under the trade name Nexyro</p>
-  <p><strong>Location:</strong> Osaka, Japan</p>
-  <p><strong>Phone:</strong> +81 80 7695 1557</p>
-  <p><strong>Email:</strong> <a href="mailto:dev@nexyro.io">dev@nexyro.io</a></p>
-  <p><strong>Website:</strong> <a href="https://nexyro.io">https://nexyro.io</a></p>
-  <p><strong>Hosting:</strong> Cloudflare, Inc. – 101 Townsend St, San Francisco, CA 94107, USA</p>
+    <!-- 1. Legal Information -->
+    <h2>1. Legal Information</h2>
+    <dl class="info-grid">
+      <dt>Operator</dt>
+      <dd>Anthony Vincent Louis Papoti, operating under the trade name <strong>Nexyro</strong></dd>
+      <dt>Location</dt>
+      <dd>Osaka, Japan</dd>
+      <dt>Phone</dt>
+      <dd>+81 80 7695 1557</dd>
+      <dt>Email</dt>
+      <dd><a href="mailto:dev@nexyro.io">dev@nexyro.io</a></dd>
+      <dt>Website</dt>
+      <dd><a href="https://nexyro.io">https://nexyro.io</a></dd>
+      <dt>Hosting</dt>
+      <dd>Cloudflare, Inc. – 101 Townsend St, San Francisco, CA 94107, USA</dd>
+    </dl>
 
-  <!-- ============================================ -->
-  <!-- 2. Service Description                       -->
-  <!-- ============================================ -->
-  <h2>2. Service Description</h2>
-  <p>
-    Nexyro provides software-as-a-service (SaaS) tools for developers and small teams.
-    Our products help collect data, manage forms, and automate internal workflows.
-  </p>
+    <!-- 2. Service Description -->
+    <h2>2. Service Description</h2>
+    <p>
+      Nexyro provides software-as-a-service (SaaS) tools for developers and small teams.
+      Our products help collect data, manage forms, and automate internal workflows.
+      Services are available worldwide via monthly or yearly subscriptions.
+    </p>
 
-  <!-- ============================================ -->
-  <!-- 3. Terms of Service                          -->
-  <!-- ============================================ -->
-  <h2>3. Terms of Service</h2>
+    <!-- 3. Terms of Service -->
+    <h2 id="terms">3. Terms of Service</h2>
 
-  <h3>3.1 Scope</h3>
-  <p>
-    These terms govern the use and purchase of SaaS services offered by Nexyro on
-    <a href="https://nexyro.io">nexyro.io</a>.
-  </p>
+    <h3>3.1 Scope</h3>
+    <p>
+      These terms govern the use and purchase of SaaS services offered by Nexyro on
+      <a href="https://nexyro.io">nexyro.io</a>.
+      By subscribing, you agree to these terms.
+    </p>
 
-  <h3>3.2 Pricing and Billing</h3>
-  <p>
-    Services are offered as monthly or yearly subscriptions.
-    Prices are displayed before checkout and include all applicable taxes.
-    Billing occurs at the time of subscription and recurs according to the chosen billing cycle (monthly or yearly).
-  </p>
+    <h3>3.2 Pricing and Billing</h3>
+    <p>
+      Services are offered as monthly or yearly subscriptions.
+      Prices are displayed before checkout and include all applicable taxes.
+      Billing occurs at the time of subscription and recurs according to the chosen billing cycle.
+    </p>
 
-  <h3>3.3 Payment</h3>
-  <p>
-    All payments are securely processed by <strong>Stripe</strong> (<a href="https://stripe.com" target="_blank" rel="noopener">stripe.com</a>).
-    Nexyro does not store any payment card information. All transactions are encrypted and comply with PCI-DSS standards.
-  </p>
+    <h3>3.3 Payment</h3>
+    <p>
+      All payments are securely processed by <strong>Stripe</strong> (<a href="https://stripe.com" target="_blank" rel="noopener">stripe.com</a>).
+      Nexyro does not store any payment card information.
+      All transactions are encrypted and comply with PCI-DSS standards.
+    </p>
 
-  <h3>3.4 Refund Policy</h3>
-  <p>
-    Refunds are available within 14 days of subscription, upon request by email at
-    <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
-    After this period, no refunds will be issued for the current billing cycle.
-  </p>
+    <h3>3.4 Refund Policy</h3>
+    <p>
+      Refunds are available within <strong>14 days</strong> of subscription, upon request by email at
+      <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
+      After this period, no refunds will be issued for the current billing cycle.
+    </p>
 
-  <h3>3.5 Cancellation</h3>
-  <p>
-    Users may cancel their subscription at any time from their account dashboard or by contacting
-    <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
-    Cancellation takes effect at the end of the current billing period. No prorated refunds will be issued.
-  </p>
+    <h3>3.5 Cancellation</h3>
+    <p>
+      You may cancel your subscription at any time from your account dashboard or by contacting
+      <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
+      Cancellation takes effect at the end of the current billing period. No prorated refunds will be issued.
+    </p>
 
-  <!-- ============================================ -->
-  <!-- 4. Privacy Policy                            -->
-  <!-- ============================================ -->
-  <h2>4. Privacy Policy</h2>
+    <!-- 4. Privacy Policy -->
+    <h2 id="privacy">4. Privacy Policy</h2>
 
-  <h3>4.1 Data Collected</h3>
-  <p>When using our services, we may collect the following data:</p>
-  <ul>
-    <li>Full name</li>
-    <li>Email address</li>
-    <li>Billing information (processed by Stripe)</li>
-    <li>Service usage data (logs, usage statistics)</li>
-  </ul>
+    <h3>4.1 Data Collected</h3>
+    <p>When using our services, we may collect:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Email address</li>
+      <li>Billing information (processed securely by Stripe)</li>
+      <li>Service usage data (logs, usage statistics)</li>
+    </ul>
 
-  <h3>4.2 Use of Data</h3>
-  <p>Collected data is used to:</p>
-  <ul>
-    <li>Provide and maintain the service</li>
-    <li>Manage billing and subscriptions</li>
-    <li>Communicate with users (support, service-related notifications)</li>
-    <li>Improve our products</li>
-  </ul>
-  <p>We do not sell or share your personal data with third parties for commercial purposes.</p>
+    <h3>4.2 Use of Data</h3>
+    <p>Collected data is used to:</p>
+    <ul>
+      <li>Provide and maintain the service</li>
+      <li>Manage billing and subscriptions</li>
+      <li>Communicate with you (support, service-related notifications)</li>
+      <li>Improve our products</li>
+    </ul>
+    <p>We do not sell or share your personal data with third parties for commercial purposes.</p>
 
-  <h3>4.3 Data Retention</h3>
-  <p>
-    Personal data is retained for the duration of active service use
-    and deleted within 12 months after account closure, unless a longer retention period is required by law.
-  </p>
+    <h3>4.3 Data Retention</h3>
+    <p>
+      Personal data is retained for the duration of active service use and deleted within
+      12 months after account closure, unless a longer retention period is required by law.
+    </p>
 
-  <h3>4.4 Your Rights</h3>
-  <p>In accordance with applicable data protection regulations (including GDPR for EU users), you have the following rights:</p>
-  <ul>
-    <li><strong>Right of access:</strong> obtain a copy of your personal data</li>
-    <li><strong>Right to rectification:</strong> correct inaccurate data</li>
-    <li><strong>Right to erasure:</strong> request deletion of your data</li>
-    <li><strong>Right to portability:</strong> receive your data in a structured format</li>
-    <li><strong>Right to object:</strong> object to the processing of your data</li>
-  </ul>
-  <p>
-    To exercise these rights, contact us at
-    <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
-    We will respond within 30 days.
-  </p>
+    <h3>4.4 Your Rights</h3>
+    <p>In accordance with applicable data protection regulations (including GDPR for EU users), you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — obtain a copy of your personal data</li>
+      <li><strong>Rectification</strong> — correct inaccurate data</li>
+      <li><strong>Erasure</strong> — request deletion of your data</li>
+      <li><strong>Portability</strong> — receive your data in a structured format</li>
+      <li><strong>Object</strong> — object to the processing of your data</li>
+    </ul>
+    <p>
+      To exercise any of these rights, contact us at
+      <a href="mailto:dev@nexyro.io">dev@nexyro.io</a>.
+      We will respond within 30 days.
+    </p>
 
-  <h3>4.5 Cookies</h3>
-  <p>
-    This website may use cookies strictly necessary for the operation of the service.
-    No advertising or third-party tracking cookies are used.
-  </p>
+    <h3>4.5 Cookies</h3>
+    <p>
+      This website may use cookies strictly necessary for the operation of the service.
+      No advertising or third-party tracking cookies are used.
+    </p>
 
-  <!-- ============================================ -->
-  <!-- 5. Limitation of Liability                   -->
-  <!-- ============================================ -->
-  <h2>5. Limitation of Liability</h2>
-  <p>
-    Nexyro strives to ensure service availability but cannot guarantee uninterrupted access.
-    In no event shall Nexyro be held liable for any indirect damages arising from the use of the service.
-  </p>
+    <!-- 5. Limitation of Liability -->
+    <h2>5. Limitation of Liability</h2>
+    <p>
+      Nexyro strives to ensure service availability but cannot guarantee uninterrupted access.
+      In no event shall Nexyro be held liable for any indirect damages arising from the use of the service.
+    </p>
 
-  <!-- ============================================ -->
-  <!-- 6. Governing Law                             -->
-  <!-- ============================================ -->
-  <h2>6. Governing Law</h2>
-  <p>
-    These terms are governed by the laws of Japan.
-    Any disputes shall be submitted to the competent courts of Osaka, Japan.
-  </p>
+    <!-- 6. Governing Law -->
+    <h2>6. Governing Law</h2>
+    <p>
+      These terms are governed by the laws of Japan.
+      Any disputes shall be submitted to the competent courts of Osaka, Japan.
+    </p>
+  </main>
 
   <footer>
-    <p>Last updated: March 2026</p>
-    <p><a href="/">&larr; Back to site</a></p>
+    <span>&copy; 2026 Nexyro</span>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="mailto:dev@nexyro.io">Contact</a>
+    </div>
   </footer>
 
 </body>
